@@ -67,8 +67,8 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> About</a>
 
     </a>
   </div>
@@ -84,6 +84,90 @@ body, html {
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-left w3-padding-large" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Abdullah <span class="w3-hide-small">Abdelwahab</span>
+  </div>
+</div>
+
+    
+    <!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">My Work</h3>
+  <p class="w3-center"><em>These are my completed projects.<br> </p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://imgur.com/y1Nyvhs.png" alt="UDC" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Until Dawn Cabin</b></p>
+        <p>Recreated (mesh + texturing) the cabin from the cover art of Supermassive Games Ltd's Until Dawn.
+Then later porting it for a demoscene in OpenGL.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://imgur.com/Qv8ffcy.png" alt="CBM" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Don't Starve Together Crash Bandicoot Mod</b></p>
+        <p>Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop.
+It involved: Creating sketches, Hiring Co-workers, Managing a team, Lua Coding/HTML, and other similar skills.
+The mod currently sits as one of the top favorited character mods with over 150,000 downloads.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://i.imgur.com/qaWmlzU.jpg" alt="BTD" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Behind The Door</b></p>
+        <p>Helped with the Game Design and Logic in the initial phases of the game before becoming commercial, then later becoming apart of the team as a QA tester and English translator for the release of Behind The Door on Steam, giving vital feedback and testing for bugs.</p>
+      </div>
+    </div>
+    
+    <div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Co-Dev Experience</h3>
+  <p class="w3-center w3-large">Working with multiple game development companies</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Valve</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Klei Entertainment</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Unity 3D</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Supermassive Games</p>
+      
+    </div>
+  </div>
+</div>
+
+
+    
+    <p> <hr /> <hr /> </p>
+    <div class="w3-center" ><iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe></div>
+    <p> <hr /> <hr /> </p>
+    <div class="w3-center" ><iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <p> <hr /> <hr /> </p>
+    <div class="w3-center" ><iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+
+  </div>
+
+</div>
+
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Portfolio</span>
   </div>
 </div>
 
@@ -160,59 +244,6 @@ Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A su
 • Dissertation Project focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
     </div>
   </div>
-</div>
-
-
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Portfolio</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">My Work</h3>
-  <p class="w3-center"><em>Here are my completed projects.<br> </p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://imgur.com/y1Nyvhs.png" alt="UDC" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Until Dawn Cabin</b></p>
-        <p>Recreated (mesh + texturing) the cabin from the cover art of Supermassive Games Ltd's Until Dawn.
-Then later porting it for a demoscene in OpenGL.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://imgur.com/Qv8ffcy.png" alt="CBM" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Don't Starve Together Crash Bandicoot Mod</b></p>
-        <p>Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop.
-It involved: Creating sketches, Hiring Co-workers, Managing a team, Lua Coding/HTML, and other similar skills.
-The mod currently sits as one of the top favorited character mods with over 150,000 downloads.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="https://i.imgur.com/qaWmlzU.jpg" alt="BTD" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Behind The Door</b></p>
-        <p>Helped with the Game Design and Logic in the initial phases of the game before becoming commercial, then later becoming apart of the team as a QA tester and English translator for the release of Behind The Door on Steam, giving vital feedback and testing for bugs.</p>
-      </div>
-    </div>
-    
-    <p> <hr /> <hr /> </p>
-    <div class="w3-center" ><iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe></div>
-    <p> <hr /> <hr /> </p>
-    <div class="w3-center" ><iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-    <p> <hr /> <hr /> </p>
-    <div class="w3-center" ><iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-
-
-  </div>
-
 </div>
 
 
