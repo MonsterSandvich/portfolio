@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ArnoiaCaption';
+    src: url('fonts/ArnoiaCaption.eot');
+    src: url('fonts/ArnoiaCaption.eot') format('embedded-opentype'),
+         url('fonts/ArnoiaCaption.woff2') format('woff2'),
+         url('fonts/ArnoiaCaption.woff') format('woff'),
+         url('fonts/ArnoiaCaption.ttf') format('truetype'),
+         url('fonts/ArnoiaCaption.svg#ArnoiaCaption') format('svg');
+}
