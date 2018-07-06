@@ -48,9 +48,34 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    background-image: url("/w3images/parallax3.jpg");/*https://imgur.com/FEc0Tx2.jpg*/
     min-height: 400px;
 }
+
+/* START: FOR NEW FOOTER */
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/* Centered(Top) text */
+.centeredtop {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* END: FOR NEW FOOTER */
+
+/* START: FOR VIDEO/RENDER BG */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* END: FOR VIDEO/RENDER BG */
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -74,8 +99,6 @@ body, html {
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-user"></i> Portfolio</a>
     <a href="#info" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-th"></i> About</a>
     <a href="#social" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-th"></i> Social Media</a>
-
-    </a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -88,7 +111,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-left w3-padding-large" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Abdullah <span class="w3-hide-small">Abdelwahab</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Abdullah <span class="w3-hide-small">Abdelwahab</span></span>
   </div>
 </div>
 
@@ -97,116 +120,180 @@ body, html {
     <br />
     <p><br /></p>
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">My Work</h3>
+    <h3 class="w3-center"><b>My Work</b></h3>
     <p class="w3-center"><em>These are my completed projects.</em> </p> <br />
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="w3-row-padding">
-    <div class="w3-third"> <a href="https://www.artstation.com/artwork/YWqx6" target="_blank">
+  <div class="w3-row-padding">
+
+    <div class="w3-third"> <a href="https://www.artstation.com/artwork/YWqx6" target="_blank" class="w3-hover-text-aqua">
       <img src="https://imgur.com/y1Nyvhs.png" alt="UDC" style="width:100%">
       <h4><p align="center">Until Dawn Cabin</p></h4></a>
       <p class="w3-animate-bottom" align="center">Recreated (mesh + texturing) the cabin from the cover art of Supermassive Games Ltd's Until Dawn.
-Then later porting it for a demoscene in OpenGL.</p>
+      Then later porting it for a demoscene in OpenGL.</p>
     </div>
-    <div class="w3-third"> <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=382501575" target="_blank">
+
+    <div class="w3-third"> <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=382501575" target="_blank" class="w3-hover-text-aqua">
       <img src="https://imgur.com/Qv8ffcy.png" alt="CBM" style="width:100%">
       <h4><p align="center">Don't Starve Together Crash Bandicoot Mod</p></h4></a>
       <p class="w3-animate-bottom" align="center">Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop.
-It involved: Creating sketches, Hiring Co-workers, Managing a team, Lua Coding/HTML, and other similar skills.
-The mod currently sits as one of the top favorited character mods with over 150,000 downloads.</p>
+      The mod currently sits as one of the top favorited character mods with over 150,000 downloads.</p>
     </div>
-    <div class="w3-third"> <a href="https://store.steampowered.com/app/676730/Behind_The_Door/" target="_blank">
+
+    <div class="w3-third"> <a href="https://store.steampowered.com/app/676730/Behind_The_Door/" target="_blank" class="w3-hover-text-aqua">
       <img src="https://i.imgur.com/qaWmlzU.jpg" alt="BTD" style="width:100%">
       <h3><p align="center">Behind The Door</p></h3></a>
       <p class="w3-animate-bottom" align="center">Helped with the Game Design and Logic in the initial phases of the game before becoming commercial, then later becoming apart of the team as a QA tester and English translator for the release of Behind The Door on Steam, giving vital feedback and testing for bugs.</p>
     </div>
-    
-    </div>
-    
-    <div class="w3-container" style="padding:128px 16px" id="about">
-        <h3 class="w3-center">Co-Dev Experience</h3>
-  <p class="w3-center w3-large">Working with multiple game development companies</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <img src="https://imgur.com/XFW3gvv.png" width="125%" height="125%">
-      <p class="w3-large" align="center">Valve</p>
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="https://imgur.com/FzoEE2q.png" width="25%" height="25%">
-      <p class="w3-large" align="center">Klei Entertainment</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <img src="https://imgur.com/GYeTcGV.png" width="100%" height="100%">
-      <p class="w3-large" align="center">Unity 3D</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <img src="https://imgur.com/ohM9rPR.png" width="95%" height="95%">
-      <p class="w3-large" align="center">Supermassive Games</p>
-      
-    </div>
   </div>
-        <hr />
-        <hr />
-        
-  <div class="w3-container" style="padding:128px 16px" id="about">
-      <h4 class="w3-center">Tools Used</h4>
-  <p class="w3-center w3-large">Using well known tools</p>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
+  <br />
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <img src="https://imgur.com/3fOpUXY.png" alt="UP" style="width:100%">
+      <h3><p align="center">Ongoing Project</p></h3>
+      <p class="w3-animate-bottom" align="center">An assymetrical multiplayer horror survival game being developed on the Unity3D engine. Was used as my Honours disseration project, and is currently being further developed.</p>
+    </div>
 
-      <div class="w3-quarter">
-        <img src="https://imgur.com/1rgKSjS.png" width="100%" height="100%">
+    <div class="w3-third">
+      <img src="https://media.giphy.com/media/de0Gz0dpmltezyMCUp/giphy.gif" alt="UDC" style="width:100%"> <!-- TO MAKE IT LEVELED: height="165px" -->
+      <h3><p align="center">Until Dawn Cabin OpenGL</p></h3>
+      <p class="w3-animate-bottom" align="center">Designed and implemented a rendering and animation system.</p>
+    </div>
+
+   <div class="w3-third">
+      <img src="https://media.giphy.com/media/8vncrI6yPYqDglJBRn/giphy.gif" alt="TTM" style="width:100%">
+      <h3><p align="center">Time Traveler Game</p></h3>
+      <p class="w3-animate-bottom" align="center">Created, designed and developed a 3D-platformer jumping puzzle with the mechanic of traveling back in time. Using the Unity3D game engine.</p>
+    </div>
+
+  </div>
+    <!--
+      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/8vncrI6yPYqDglJBRn" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/gamedev-8vncrI6yPYqDglJBRn"></a></p>
+      <h3><p align="center">Time Traveler Mech</p></h3></a>
+    -->
+
+    
+    <br />
+    <br />
+  <div class="w3-container" style="padding:28px 16px" id="about">
+    <h3 class="w3-center"><b>Co-Dev Experience</b></h3>
+    <p class="w3-center w3-large"><i>Working with multiple game development companies</i></p>
+      <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+          <img src="https://imgur.com/XFW3gvv.png" width="125%" height="125%">
+        <p class="w3-large" align="center">Valve</p>
+        </div>
+    
+        <div class="w3-quarter">
+        <img src="https://imgur.com/FzoEE2q.png" width="25%" height="25%">
+        <p class="w3-large" align="center">Klei Entertainment</p>
+        </div>
+
+        <div class="w3-quarter">
+        <img src="https://imgur.com/GYeTcGV.png" width="100%" height="100%">
         <p class="w3-large" align="center">Unity 3D</p>
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="https://imgur.com/BUiuAjI.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Maya</p>
-      </div>
+        </div>
 
-      <div class="w3-quarter">
-        <img src="https://imgur.com/yBeb5Ne.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Blender</p>
+        <div class="w3-quarter">
+        <img src="https://imgur.com/ohM9rPR.png" width="95%" height="95%">
+        <p class="w3-large" align="center">Supermassive Games</p>
+        </div>
       </div>
-
-      <div class="w3-quarter">
-        <img src="https://imgur.com/lxhuCg9.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Substance Painter</p>
-      </div>
+      <hr />
+      <hr />
         
-       <div class="w3-quarter">
-        <img src="https://imgur.com/eE868lb.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Source Filmmaker</p> 
-      </div>
-        
-        <div class="w3-quarter">
-        <img src="https://imgur.com/UtSW5RN.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Gimp 2</p>   
-      </div>
+      <div class="w3-container" style="padding:28px 16px" id="about">
+      <h4 class="w3-center"><b>Tools Used</b></h4>
+      <p class="w3-center w3-large"><i>Using well known tools</i></p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
 
-        <div class="w3-quarter">
-        <img src="https://imgur.com/uA6Wq2G.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Visual Studio IDE</p>   
-      </div>
-
-        <div class="w3-quarter">
-        <img src="https://imgur.com/6waxxh6.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Eclipse IDE</p>   
-      </div>
-
+          <div class="w3-quarter">
+            <img src="https://imgur.com/1rgKSjS.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Unity 3D</p>
+          </div>
       
+          <div class="w3-quarter">
+          <img src="https://imgur.com/BUiuAjI.png" width="100%" height="100%">
+          <p class="w3-large" align="center">Maya</p>
+          </div>
+
+          <div class="w3-quarter">
+          <img src="https://imgur.com/yBeb5Ne.png" width="100%" height="100%">
+          <p class="w3-large" align="center">Blender</p>
+          </div>
+
+          <div class="w3-quarter">
+            <img src="https://imgur.com/lxhuCg9.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Substance Painter</p>
+          </div>
+        
+          <div class="w3-quarter">
+            <img src="https://imgur.com/eE868lb.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Source Filmmaker</p> 
+          </div>
+            
+          <div class="w3-quarter">
+            <img src="https://imgur.com/UtSW5RN.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Gimp 2</p>   
+          </div>
+
+          <div class="w3-quarter">
+            <img src="https://imgur.com/uA6Wq2G.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Visual Studio IDE</p>   
+          </div>
+
+          <div class="w3-quarter">
+            <img src="https://imgur.com/6waxxh6.png" width="100%" height="100%">
+            <p class="w3-large" align="center">Eclipse IDE</p>   
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!-- Trying to put the Background Image behind the Render and Videos
+      <p> <hr /> <br /> </p>
+        <div class="w3-center" >
+
+          <div class="container" id="BGcontainer">
+            <div class="centered">
+              <img src="https://imgur.com/FbpfJNR.png" alt="RENDER BG" style="width:100%">
+            </div>
+            <iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <p> <br /> <hr /> </p>
+      <div class="w3-center" >
+
+      <div class="container" id="BGcontainer">
+        <div class="centered">
+        <img src="https://imgur.com/FbpfJNR.png" alt="RENDER BG" style="width:100%">
+        </div>
+        <iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
     </div>
-  </div>
 
+      <p> <br /> <hr /> </p>
+      <div class="w3-center" >
+      <iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
 
-    
-    <p> <hr /> <hr /> </p>
+      </div>
+      <p><br /><br /></p>
+    </div>
+-->
+
+    <p> <hr /> <br /> </p>
     <div class="w3-center" ><iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe></div>
-    <p> <hr /> <hr /> </p>
+    <p> <br /> <hr /> </p>
     <div class="w3-center" ><iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-    <p> <hr /> <hr /> </p>
+    <p> <br /> <hr /> </p>
     <div class="w3-center" ><iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 
@@ -218,92 +305,105 @@ The mod currently sits as one of the top favorited character mods with over 150,
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="info">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Who I Am</span>
-  </div>
-</div>
+    <div class="bgimg-2 w3-display-container w3-opacity-min" id="info">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"><b>About Me</b></span>
+      </div>
+    </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64">
+    <div class="w3-content w3-container w3-padding-64">
     <p>
-        <br />
-      
-      <br />
+    <br />
+    <br />
     </p>
-    <h3 class="w3-center">About Me</h3>
-  <p>
-      <br />
-      <hr />
-      <hr />
-      <hr />
-      <br />
-      I am a very passionate lover of game design, whether it is on a console or on a PC. In addition to my academic education studying Computer Sciences in Heriot Watt University, I spend time on Game Development using development tools and make shorts with Valve's Source Filmmaker. <br />I have developed a highly rated Mod called Crash Bandicoot DST that is still currently number one custom character Mod on the Steam Workshop. <br /><br />
+    <!-- Unnecessary: <h3 class="w3-center">About Me</h3> -->
+    <p>
+    <br />
+    <hr />
+    <hr />
+    <br />
+  I am a very passionate lover of game design, whether it is on a console or on a PC. In addition to my academic education studying Computer Sciences in Heriot Watt University, I spend time on Game Development using development tools and make shorts with Valve's Source Filmmaker. <br />I have developed a highly rated Mod called Crash Bandicoot DST that is still currently number one custom character Mod on the Steam Workshop. <br /><br />
 
-During my years, I sought extra curriculum internships and participated in major events like: Middle East Film and Comic Con, Games15, Step Conference, XCAT World Series, Emirates Islamic Hackathon, Angelhack and Gulf Motor Festival. Where I developed many skills like working under pressure, working with a team, leadership skills, collaborations, handling difficult people, and marketing our efforts. <br /><br />
+  During my years, I sought extra curriculum internships and participated in major events like: Middle East Film and Comic Con, Games15, Step Conference, XCAT World Series, Emirates Islamic Hackathon, Angelhack and Gulf Motor Festival. Where I developed many skills like working under pressure, working with a team, leadership skills, collaborations, handling difficult people, and marketing our efforts. <br /><br />
 
-Besides my academics, I am active in sports activities. Currently playing Capoeira, on Orange/Blue cord level, with a goal of reaching the Professor rank. In addition to it being a hobby, I used to teach kids Capoeira in <i><a href="https://www.twitch.tv/MonsterSandVich" title="withaV" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">multiple schools across Dubai</a></i>.<br /><br />
+  Besides my academics, I am very active in sports activities. I have coached the Fight Club in Dubai for an academic year. <br />I currently am a practitioner in the martial art of Capoeira. I plan to extend my knowledge and abilities from my Capoeira background in to the field of motion capture. On my way on attaining a <a href="http://abadacapoeiradubai.com/graduation" title="ABADA Capoeira Graduation System" target="_blank" style="color: #01F9E3" class="w3-hover-text-aqua"><i>Graduado</i></a> title with a Blue cord level.multiple schools across Dubai</a></i>.<br /><br />
 
-On the side, I stream regularly on livestreaming website, <i><a href="https://www.twitch.tv/MonsterSandVich" title="withaV" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Twitch</a></i>. Where I keep up with the gaming trends, and occasionally pine for classic titles that turned me into the healthy, sleep-shirking addict I am today.<br /><br /> <!--Twitch Hexa: #6441A4-->
+  On the side, I stream regularly on livestreaming website, <i><a href="https://www.twitch.tv/MonsterSandVich" title="withaV" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Twitch</a></i>. Where I keep up with the gaming trends, and occasionally pine for classic titles that turned me into the healthy, sleep-shirking addict I am today.<br /><br /> <!--Twitch Hexa: #6441A4-->
 
-I aspire to become a renowned Game Developer who would start a whole new era of games with the help of Virtual Reality and Motion Capture. As well as handling my own marketing team using the skills I am familiar with.<br /><br />
-
-
-Currently seeking full-time opportunities in multiple positions including the Game Industry. Graduated with an Upper Division Honourary Degree in Computer Systems at the age of 22.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-book w3-margin-right"></i>Education and Achievements</b></p><br>
-      <img src="https://imgur.com/dEVVrez.jpg" class="w3-round w3-image" alt="VR Presentation" width="500" height="333"> <!--Removed: w3-opacity w3-hover-opacity-off-->
-<br /><br />
-      <img src="https://imgur.com/8xat417.jpg" class="w3-round w3-image" alt="Debate" width="500" height="333">
-<br /><br />
-      <img src="https://imgur.com/JJReRxC.jpg" class="w3-round w3-image" alt="FGB Hackathon Check" width="500" height="333">
-<br /><br />      
-      <img src="https://imgur.com/paBDnIA.jpg" class="w3-round w3-image" alt="VISA Hackathon Check" width="500" height="333">
-<br /><br />
-      <img src="https://imgur.com/Qq1SgXL.jpg" class="w3-round w3-image" alt="Grad Photo" width="500" height="333">
+  I aspire to become a renowned Game Developer who would start a whole new era of games with the help of Virtual Reality and Motion Capture. As well as handling my own marketing team using the skills I am familiar with.<br /><br />
 
 
-    </div>
+  Currently seeking full-time opportunities in multiple positions including the Game Industry. Graduated with an Upper Division Honourary Degree in Computer Systems at the age of 22.</p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <h4><p><b><i class="fa fa-book w3-margin-right w3-center"></i>Education and Achievements</b></p></h4><br>
+        <img src="https://imgur.com/Qq1SgXL.jpg" class="w3-round w3-image" alt="Grad Photo" width="500" height="333"> <!--Removed: w3-opacity w3-hover-opacity-off-->
+  <br /><br />
+        <img src="https://imgur.com/Mulg8Qp.jpg" class="w3-round w3-image" alt="Future" width="500" height="333">
+  <br /><br />
+        <img src="https://imgur.com/8xat417.jpg" class="w3-round w3-image" alt="Debate" width="500" height="333">
+  <br /><br />
+        <img src="https://imgur.com/yMNfutr.jpg" class="w3-round w3-image" alt="Class Reps" width="500" height="333">
+  <br /><br />
+        <img src="https://imgur.com/XU91R15.jpg" class="w3-round w3-image" alt="VISA Showcase Day" width="500" height="333">
+  <br /><br />
+        <img src="https://imgur.com/paBDnIA.jpg" class="w3-round w3-image" alt="VISA Hackathon Check" width="500" height="333">
+  <br /><br />
+        <img src="https://imgur.com/JJReRxC.jpg" class="w3-round w3-image" alt="FGB Hackathon Check" width="500" height="333">   
+  <br /><br />
+        <img src="https://imgur.com/dEVVrez.jpg" class="w3-round w3-image" alt="VR Presentation" width="500" height="333">
 
+      </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p><b><i>Bachelor's Hounours in Computer Systems from <a href="https://www.hw.ac.uk/study/uk/undergraduate/computer-systems.htm" title="Heriot-Watt Computer Systems Course Overview" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Heriot-Watt University (Edinburgh, UK)</a>.</i></b><br /><br />
-Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A summary of my most notable achievements over my academic career (2014-2018):
-<br /><br />
-• Web Programming (Project 1) - Created a music store website "Spectre Music" where customers can add items to cart and checkout. Using HTML5 (XHTML syntax), CCS3, responsive web design, PHP, XML, mySQL and JavaServer Pages (JSP).
-<br /><br />
-• WP (Project 2) - Created a Twitter Follower Manager website, using the Twitter API implementing AJAX and MySQL databases.
-<br /><br />
-• Hardware-Software Interface (Project 1) - Created a steganography software using C to be used with “.PPM” format files using a 2D array.
-<br /><br />
-• HSI (Project 2) - Recreated the game "Mastermind", using C and assembly language.
-<br /><br />
-• Interaction Design - Designed a full-scaled penguin robot caretaker "Pengubot". As a team we carried on an experimental protocol and demonstrated a video/visual strip of a scenario.
-<br /><br />
-• Web Design and Databases - Created a fully functional game store website "Planet Undead" to showcase our skills of web design including PHP and MySQL databases. Awarded the best website theme and design.
-<br /><br />
-• Computer Network Security (Project 1) - Symmetric Encrypting Algorithm: Completed taaks in learning core concepts of secret key encryption, by obtaining evidence-based experience when encrypting, as well as, decrypting messages.
-<br /><br />
-• CNS (Project 2) - Secure Applet: Created a java applet, which will then later by signed with a X.509 certificate, to verify a file signed by another external group.
-<br /><br />
-• 3D Graphics and Animation - Designed and implemented a rendering and animation system, in OpenGL, that demonstrated the various concepts of a graphics engine learned throughout this course. The scene consisted of a scenegraph that was 3+ levels in depth, three geometry models, various transformations and rotations, various material and lighting shader iterations and an automated camera system with multiple user interactions upon the objects in the scene.
-<br /><br />
-• Games Programming (Project 1) - Time Traveler Game: Understanding, designing, developing, implementing and playtesting the game mechanic of traveling back in time. Developed a platformer game on the Unity3D game engine.
-<br /><br />
-• GP (Project 2) - Implementing four core components often used in Video Games. Demonstrated running code for a particle explosion, a physically-driven bouncing ball, Boids flocking simulation in 3D space and an A* path-planning search.
-<br /><br />
-• Dissertation Project focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
-    </div>
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p><b>Bachelor's of Science in Computer Systems with 2:1 Honours from <a href="https://www.hw.ac.uk/study/uk/undergraduate/computer-systems.htm" title="Heriot-Watt Computer Systems Course Overview" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Heriot-Watt University (Edinburgh, UK)</a>.</b><br /><br />
+      <b><i>Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A summary of my most notable achievements over my academic career (2014-2018):</i></b>
+      <br /><br />
+      • <b>Dissertation Project:</b> Focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
+
+      • <b>Web Programming (Project 1) -</b> Created a music store website "Spectre Music" where customers can add items to cart and checkout. Using HTML5 (XHTML syntax), CCS3, responsive web design, PHP, XML, mySQL and JavaServer Pages (JSP).
+      <br /><br />
+      • <b>WP (Project 2) -</b> Created a Twitter Follower Manager website, using the Twitter API implementing AJAX and MySQL databases.
+      <br /><br />
+      • <b>Hardware-Software Interface (Project 1) -</b> Created a steganography software using C to be used with “.PPM” format files using a 2D array.
+      <br /><br />
+      • <b>HSI (Project 2) -</b> Recreated the game "Mastermind", using C and assembly language.
+      <br /><br />
+      • <b>Interaction Design -</b> Designed a full-scaled penguin robot caretaker "Pengubot". As a team we carried on an experimental protocol and demonstrated a video/visual strip of a scenario.
+      <br /><br />
+      • <b>Web Design and Databases -</b> Created a fully functional game store website "Planet Undead" to showcase our skills of web design including PHP and MySQL databases. Awarded the best website theme and design.
+      <br /><br />
+      • <b>Computer Network Security (Project 1) -</b> Symmetric Encrypting Algorithm: Completed taaks in learning core concepts of secret key encryption, by obtaining evidence-based experience when encrypting, as well as, decrypting messages.
+      <br /><br />
+      • <b>CNS (Project 2) -</b> Secure Applet: Created a java applet, which will then later by signed with a X.509 certificate, to verify a file signed by another external group.
+      <br /><br />
+      • <b>3D Graphics and Animation | Until Dawn Cabin -</b> Designed and implemented a rendering and animation system, in OpenGL, that demonstrated the various concepts of a graphics engine learned throughout this course. The scene consisted of a scenegraph that was 3+ levels in depth, three geometry models, various transformations and rotations, various material and lighting shader iterations and an automated camera system with multiple user interactions upon the objects in the scene.
+      <br /><br />
+      • <b>Games Programming (Project 1) | Time Traveler Game -</b> Understanding, designing, developing, implementing and playtesting the game mechanic of traveling back in time. Developed a platformer game on the Unity3D game engine.
+      <br /><br />
+      • <b>GP (Project 2) -</b> Implementing four core components often used in Video Games. Demonstrated running code for a particle explosion, a physically-driven bouncing ball, Boids flocking simulation in 3D space and an A* path-planning search.
+      <br /><br />
+      • <b>First Gulf Bank Hackathon | Abu Dhabi | 2nd Runner Up -</b> Lead my team, Unity Insomniacs, by creating an Augmented Reality application using the Unity Engine (Beta). The AR app catered to the banking sector where the user could enter a 4-digit pin and access an interface that displayed multiple 3-Dimensional panels that were fully functional. As well as using Google Map's API to navigate the user to an existing FGB ATM machine as well, as notifying the user whenever he/she is in proximity of a nearby offer. To top it all off, we implemented a smart learning algorithm that produced supervised inductive learning method to adapt and recognize a credit/debit card.
+      <br /><br />
+      • <b>The Digital Payments Hackathon | Dubai | 2nd Place -</b> Team Unity Insomniacs won back-to-back once more during the Digital Payments Hackathon organized by AngelHack and sponsored by VISA, Decode Dubai, MobileConnect, in5 and Dubai Internet City.</n>
+      Our goal was to determine where digital payment solutions will have the most impact on the future of Dubai. We needed to leverage at least one “VISA Payment Method API” to create a digital payment application. </n>
+      We competed against 19 teams. After developing for 24-hours, we created a fully functional augmented reality application called “VISA AR” and emerged victorious, placing second.
+      <br /><br />
+      • <b>DST Crash Bandicoot Mod -</b> Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop. It involved: Creating sketches, Hiring Co-workers, Managing a team, Lua Coding/HTML, and other similar skills. The mod currently sits as one of the top favorited character mods with over 150,000 downloads. 
+      <br /><br />
+      </div>
       <hr />
       <br />
       <hr />
+      <div class="w3-row-padding" style="margin:100px -16px" id="pre-social">  
+      </div>
       <h3 class="w3-center">Social Media</h3>
       <br />
       <hr />
       <hr />
-      
+    
       <div class="w3-row-padding" style="margin:0 -16px" id="social">
         <div class="w3-quarter w3-margin-bottom">
           <div class="w3-display-container"> <a href="https://twitter.com/Monstervich" target="_blank">
@@ -329,13 +429,13 @@ Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A su
             <!-- <span class="w3-display-bottomleft w3-padding"></span> -->
           </div>
         </div>
+        <p><div class="w3-center"> <!-- style="margin-bottom: -100px" -->
+        Accounts verified by <a href="https://keybase.io/monstervich" title="Keybase.io/monstervich" target="_blank" class="w3-hover-text-aqua">Keybase.io</a> <img src="https://imgur.com/uHmCE3C.png" alt="Keybase" style="width:2%">
+        </div></p>
       </div>
   </div>
 </div>
 
-<p><div class="w3-center">
-  Accounts verified by <a href="https://keybase.io/monstervich" title="Keybase.io/monstervich" target="_blank" class="w3-hover-text-aqua">Keybase.io</a> <img src="https://imgur.com/uHmCE3C.png" alt="Keybase" style="width:1%">
-</div></p>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -348,17 +448,22 @@ Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A su
 
 <!-- Third Parallax Image with Portfolio Text -->
 
-
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-centre"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <p><i><h6>Contact me at: <br>Cell Phone: <a href="tel:+447719960392">+447719960392</a><br>
-      Email: <a href="mailto:monstervich@outlook.com" class="w3-hover-text-aqua">monstervich@outlook.com</a></h6></i></p>
+<footer class="w3-center  w3-opacity w3-hover-opacity-off">
+<div class="container" id="footercontainer">
+  <img src="https://imgur.com/JohXUHe.jpg" width="100%" height="100%">
+
+  <div class="centeredtop">
+      <div class="w3-large w3-section">
+      <p><h5>Contact me at: <i><br>Cell Phone: <a href="tel:+447719960392">+447719960392</a><br>
+      Email: <a href="mailto:abdullah.valve@gmail.com" class="w3-hover-text-aqua">abdullah.valve@gmail.com</a></h5></i></p>
+      </div><br /><br /><br />
+      <p>Thanks to <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-aqua">w3.css</a> #withaV</p>
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-centre"></i>To the top</a>
   </div>
-  <p>Thanks to <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-aqua">w3.css</a> #withaV</p>
+</div>
 </footer>
- 
+
 <!-- Add Google Maps -->
 <script>
 
