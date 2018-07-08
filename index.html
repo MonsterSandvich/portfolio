@@ -76,6 +76,29 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image_glow {
+    position: absolute;
+    top: -17.5%;
+    left: -15%;
+    opacity: 0.5;
+}
+.image_glow2 {
+    position: absolute;
+    top: -5.5%;
+    left: -15%;
+    opacity: 0.5;
+}
+.iframe_glow1 {
+    position: relative;
+    top: 50%;
+    left: 0%;
+}
 /* END: FOR VIDEO/RENDER BG */
 
 .w3-wide {letter-spacing: 10px;}
@@ -163,7 +186,7 @@ body, html {
 
    <div class="w3-third">
       <img src="https://media.giphy.com/media/8vncrI6yPYqDglJBRn/giphy.gif" alt="TTM" style="width:100%">
-      <h3><p align="center">Time Traveler Game</p></h3>
+      <h3><p align="center">Time Traveller Game</p></h3>
       <p class="w3-animate-bottom" align="center">Created, designed and developed a 3D-platformer jumping puzzle with the mechanic of traveling back in time. Using the Unity3D game engine.</p>
     </div>
 
@@ -252,57 +275,48 @@ body, html {
 
 
 
-
-<!-- Trying to put the Background Image behind the Render and Videos
+<!-- Added Background Image behind the Render and Videos -->
       <p> <hr /> <br /> </p>
-        <div class="w3-center" >
+      <div class="w3-center" >
+        <div class="container" id="BGcontainer">
+          <div class="parent">
+            <img class="image_glow" width="1200" height="520" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
+          <iframe class="iframe_glow1" width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+
+      <p> <br /> <hr /> </p>
+        <div class="w3-center" >
           <div class="container" id="BGcontainer">
-            <div class="centered">
-              <img src="https://imgur.com/FbpfJNR.png" alt="RENDER BG" style="width:100%">
+            <div class="parent">
+            <img class="image_glow2" width="1200" height="450" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
+            <iframe class="iframe_glow1" id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <p> <br /> <hr /> </p>
+        <div class="w3-center" >
+          <div class="container" id="BGcontainer">
+            <div class="parent">
+            <img class="image_glow2" width="1200" height="450" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
+            <iframe class="iframe_glow1" id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
           </div>
         </div>
 
-      </div>
 
 
 
-      <p> <br /> <hr /> </p>
-      <div class="w3-center" >
 
-      <div class="container" id="BGcontainer">
-        <div class="centered">
-        <img src="https://imgur.com/FbpfJNR.png" alt="RENDER BG" style="width:100%">
-        </div>
-        <iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-
-      <p> <br /> <hr /> </p>
-      <div class="w3-center" >
-      <iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-
+      <p><br /><br /></p>
       </div>
       <p><br /><br /></p>
     </div>
--->
-
-    <p> <hr /> <br /> </p>
-    <div class="w3-center" ><iframe width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe></div>
-    <p> <br /> <hr /> </p>
-    <div class="w3-center" ><iframe id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-    <p> <br /> <hr /> </p>
-    <div class="w3-center" ><iframe id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-
-
-  </div>
-<p><br /><br /></p>
-</div>
-
-
 
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -328,7 +342,7 @@ body, html {
 
   During my years, I sought extra curriculum internships and participated in major events like: Middle East Film and Comic Con, Games15, Step Conference, XCAT World Series, Emirates Islamic Hackathon, Angelhack and Gulf Motor Festival. Where I developed many skills like working under pressure, working with a team, leadership skills, collaborations, handling difficult people, and marketing our efforts. <br /><br />
 
-  Besides my academics, I am very active in sports activities. I have coached the Fight Club in Dubai for an academic year. <br />I currently am a practitioner in the martial art of Capoeira. I plan to extend my knowledge and abilities from my Capoeira background in to the field of motion capture. On my way on attaining a <a href="http://abadacapoeiradubai.com/graduation" title="ABADA Capoeira Graduation System" target="_blank" style="color: #01F9E3" class="w3-hover-text-aqua"><i>Graduado</i></a> title with a Blue cord level.multiple schools across Dubai</a></i>.<br /><br />
+  Besides my academics, I am very active in sports activities. I have coached the Fight Club in Dubai for an academic year. <br />I currently am a practitioner in the martial art of Capoeira. I plan to extend my knowledge and abilities from my Capoeira background in to the field of motion capture. On my way on attaining a <a href="http://abadacapoeiradubai.com/graduation" title="ABADA Capoeira Graduation System" target="_blank" style="color: #01F9E3" class="w3-hover-text-aqua"><i>Graduado</i></a> title with a Blue cord level in Capoeira. Experience in teaching adults, as well as kids, across multiple schools across Dubai</a></i>.<br /><br />
 
   On the side, I stream regularly on livestreaming website, <i><a href="https://www.twitch.tv/MonsterSandVich" title="withaV" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Twitch</a></i>. Where I keep up with the gaming trends, and occasionally pine for classic titles that turned me into the healthy, sleep-shirking addict I am today.<br /><br /> <!--Twitch Hexa: #6441A4-->
 
@@ -360,9 +374,9 @@ body, html {
     <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p><b>Bachelor's of Science in Computer Systems with 2:1 Honours from <a href="https://www.hw.ac.uk/study/uk/undergraduate/computer-systems.htm" title="Heriot-Watt Computer Systems Course Overview" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Heriot-Watt University (Edinburgh, UK)</a>.</b><br /><br />
-      <b><i>Aquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A summary of my most notable achievements over my academic career (2014-2018):</i></b>
+      <b><i>Acquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A summary of my most notable achievements over my academic career (2014-2018):</i></b>
       <br /><br />
-      • <b>Dissertation Project:</b> Focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
+      • <b>Dissertation Project:</b> Focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first-hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
 
       • <b>Web Programming (Project 1) -</b> Created a music store website "Spectre Music" where customers can add items to cart and checkout. Using HTML5 (XHTML syntax), CCS3, responsive web design, PHP, XML, mySQL and JavaServer Pages (JSP).
       <br /><br />
@@ -380,9 +394,9 @@ body, html {
       <br /><br />
       • <b>CNS (Project 2) -</b> Secure Applet: Created a java applet, which will then later by signed with a X.509 certificate, to verify a file signed by another external group.
       <br /><br />
-      • <b>3D Graphics and Animation | Until Dawn Cabin -</b> Designed and implemented a rendering and animation system, in OpenGL, that demonstrated the various concepts of a graphics engine learned throughout this course. The scene consisted of a scenegraph that was 3+ levels in depth, three geometry models, various transformations and rotations, various material and lighting shader iterations and an automated camera system with multiple user interactions upon the objects in the scene.
+      • <b>3D Graphics and Animation | Until Dawn Cabin -</b> Designed and implemented a rendering and animation system, in OpenGL, that demonstrated the various concepts of a graphics engine learned throughout this course. The scene consisted of a Scenegraph that was 3+ levels in depth, three geometry models, various transformations and rotations, various material and lighting shader iterations and an automated camera system with multiple user interactions upon the objects in the scene.
       <br /><br />
-      • <b>Games Programming (Project 1) | Time Traveler Game -</b> Understanding, designing, developing, implementing and playtesting the game mechanic of traveling back in time. Developed a platformer game on the Unity3D game engine.
+      • <b>Games Programming (Project 1) | Time Traveller Game -</b> Understanding, designing, developing, implementing and playtesting the game mechanic of traveling back in time. Developed a platformer game on the Unity3D game engine.
       <br /><br />
       • <b>GP (Project 2) -</b> Implementing four core components often used in Video Games. Demonstrated running code for a particle explosion, a physically-driven bouncing ball, Boids flocking simulation in 3D space and an A* path-planning search.
       <br /><br />
