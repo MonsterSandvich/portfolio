@@ -1,573 +1,493 @@
-<!-- AUTHOR: Abdullah -->
-<!DOCTYPE html>
-<html>
-<title>Abdullah Abdelwahab's Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="portfolio/CSS/ArnoiaCaption.css">   
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;}
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Abdullah Abdelwahab | Monstervich</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
 
-body, html {
-    height: 100%;
-    color: #525252;
-    line-height: 1.8;
-}
- 
-/*
-.w3-monster {
-  font-family: 'League Gothic', normal, normal;
-}
-*/
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) OLD: https://imgur.com/dEVVrez*/
-.bgimg-1 {
-    background-image: url('https://imgur.com/4skqvhK.png');
-    min-height: 100%;
-    opacity: 1337;
-    transform: translate(0%, -17.5%);
-    margin-bottom: -240px;
-    border-radius: 00px 00px 100px 100px;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url('https://imgur.com/Qv8ffcy.png');
-    min-height: 70%;
-    opacity: 1337;
-    transform: translate(0%, -17.5%);
-    margin-bottom: -240px;
-    border-radius: 00px 00px 100px 100px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");/*https://imgur.com/FEc0Tx2.jpg*/
-    min-height: 400px;
-}
-
-/* START: FOR NEW FOOTER */
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-/* Centered(Top) text */
-.centeredtop {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* END: FOR NEW FOOTER */
-
-/* START: FOR VIDEO/RENDER BG */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image_glow {
-    position: absolute;
-    top: -17.5%;
-    left: -15%;
-    opacity: 0.5;
-}
-.image_glow2 {
-    position: absolute;
-    top: -5.5%;
-    left: -15%;
-    opacity: 0.5;
-}
-.iframe_glow1 {
-    position: relative;
-    top: 50%;
-    left: 0%;
-}
-/* END: FOR VIDEO/RENDER BG */
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-</style>
-<body class="w3-black">
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-gray" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button w3-border-bottom w3-border-black" style="width:25%">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-user"></i> Portfolio</a>
-    <a href="#info" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-th"></i> About</a>
-    <a href="#social" class="w3-bar-item w3-button w3-hide-small w3-border-left w3-border-bottom w3-border-black" style="width:25%"><i class="fa fa-th"></i> Social Media</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <!-- <div class="w3-display-left w3-padding-large" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Abdullah <span class="w3-hide-small">Abdelwahab</span></span>
-  </div> -->
-  <div class="w3-display-bottomleft w3-padding-large" style="white-space:nowrap;">
-    <img src="https://imgur.com/o47Iq16.png" width="30%" height="30%">
-  </div>
-</div>
-
-    
-    <!-- Container (Portfolio Section) -->
-    <br />
-    <p><br /></p>
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center"><b>My Work</b></h3>
-    <p class="w3-center"><em>These are my completed projects.</em> </p> <br />
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding">
-
-      <div class="w3-third"> <a href="https://store.steampowered.com/app/676730/Behind_The_Door/" target="_blank" class="w3-hover-text-aqua">
-      <img src="https://i.imgur.com/qaWmlzU.jpg" alt="BTD" style="width:100%">
-      <h3><p align="center">Behind The Door</p></h3></a>
-      <p class="w3-animate-bottom" align="center">Helped with the Game Design and Logic in the initial phases of the game before becoming commercial, then later becoming apart of the team as a QA tester and English translator for the release of Behind The Door on Steam, giving vital feedback and testing for bugs.</p>
-    </div>
-
-    <div class="w3-third"> <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=382501575" target="_blank" class="w3-hover-text-aqua">
-      <!-- Old imgur image: https://imgur.com/Qv8ffcy.png -->
-      <img src="https://i.imgur.com/c4fg4Oj.gif" alt="CBM" style="width:100%">
-      <h4><p align="center">Don't Starve Together Crash Bandicoot Mod</p></h4></a>
-      <p class="w3-animate-bottom" align="center">Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop.
-      The mod currently sits as one of the top favorited character mods with over 200,000 downloads.</p>
-    </div>
-
-    <div class="w3-third"> <a href="https://www.artstation.com/artwork/YWqx6" target="_blank" class="w3-hover-text-aqua">
-      <img src="https://imgur.com/y1Nyvhs.png" alt="UDC" style="width:100%">
-      <h4><p align="center">Until Dawn Cabin</p></h4></a>
-      <p class="w3-animate-bottom" align="center">Recreated (mesh + texturing) the cabin from the cover art of Supermassive Games Ltd's Until Dawn.
-      Then later porting it for a demoscene in OpenGL.</p>
-    </div>
-
-  </div>
-  <br />
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <img src="https://imgur.com/3fOpUXY.png" alt="UP" style="width:100%">
-      <h3><p align="center">Ongoing Project</p></h3>
-      <p class="w3-animate-bottom" align="center">An assymetrical multiplayer horror survival game being developed on the Unity3D engine. Previously used as my Honours disseration project, and is currently being further developed independently.</p>
-    </div>
-
-    <div class="w3-third">
-      <img src="https://media.giphy.com/media/de0Gz0dpmltezyMCUp/giphy.gif" alt="UDC" style="width:100%"> <!-- TO MAKE IT LEVELED: height="165px" -->
-      <h3><p align="center">Until Dawn Cabin OpenGL</p></h3>
-      <p class="w3-animate-bottom" align="center">Designed and implemented a rendering and animation system.</p>
-    </div>
-
-   <div class="w3-third">
-      <img src="https://media.giphy.com/media/8vncrI6yPYqDglJBRn/giphy.gif" alt="TTM" style="width:100%">
-      <h3><p align="center">Time Traveller Game</p></h3>
-      <p class="w3-animate-bottom" align="center">Created, designed and developed a 3D-platformer jumping puzzle with the mechanic of traveling back in time. Using the Unity3D game engine.</p>
-    </div>
-
-  </div>
-    <!--
-      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/8vncrI6yPYqDglJBRn" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/gamedev-8vncrI6yPYqDglJBRn"></a></p>
-      <h3><p align="center">Time Traveler Mech</p></h3></a>
-    -->
-
-    
-    <br />
-    <br />
-  <div class="w3-container" style="padding:28px 16px" id="about">
-    <h3 class="w3-center"><b>Co-Dev Experience</b></h3>
-    <p class="w3-center w3-large"><i>Working with multiple game development companies</i></p>
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-quarter">
-          <img src="https://imgur.com/XFW3gvv.png" width="125%" height="125%">
-        <p class="w3-large" align="center">Valve</p>
-        </div>
-    
-        <div class="w3-quarter">
-        <img src="https://imgur.com/FzoEE2q.png" width="25%" height="25%">
-        <p class="w3-large" align="center">Klei Entertainment</p>
-        </div>
-
-        <div class="w3-quarter">
-        <img src="https://imgur.com/jW5K2EC.png" width="100%" height="100%">
-        <p class="w3-large" align="center">Blizzard Entertainment</p>
-        </div>
-
-        <div class="w3-quarter">
-        <img src="https://imgur.com/ohM9rPR.png" width="95%" height="95%">
-        <p class="w3-large" align="center">Supermassive Games</p>
-        </div>
+      <!-- Preloader -->
+      <div class="loader">
+         <div class="intro">
+            <div class="intro-title"><img src="images/abdabd.png" class="logo-img light-logo img-fluid" alt=""></div>
+         </div>
       </div>
-      <hr />
-      <hr />
-        
-      <div class="w3-container" style="padding:28px 16px" id="about">
-      <h4 class="w3-center"><b>Tools Used</b></h4>
-      <p class="w3-center w3-large"><i>Using well-known tools</i></p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <!-- preloader End -->
 
-          <div class="w3-quarter">
-            <img src="https://imgur.com/1rgKSjS.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Unity 3D</p>
-          </div>
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
 
-          <div class="w3-quarter">
-            <img src="https://imgur.com/jvCSuBe.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Unreal Engine 4</p>
-          </div>
+      <!-- Main content wrap -->
+      <div class="site-wrap">
 
-          <div class="w3-quarter">
-            <img src="https://imgur.com/vvYhjJn.png" width="100%" height="100%">
-            <p class="w3-large" align="center">OpenGL</p>
-          </div>
-      
-          <div class="w3-quarter">
-          <img src="https://imgur.com/BUiuAjI.png" width="100%" height="100%">
-          <p class="w3-large" align="center">Maya</p>
-          </div>
+         <!-- Main content inner -->
+         <div class="site-inner">
 
-          <div class="w3-quarter">
-          <img src="https://imgur.com/yBeb5Ne.png" width="100%" height="100%">
-          <p class="w3-large" align="center">Blender</p>
-          </div>
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/abdabd.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                           <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                           <li><a href="https://github.com/MonsterSandvich/portfolio/raw/gh-pages/Documents/AbdullahAbdelwahabResume2022.pdf" class="nav-link cursor-item">Resume</a></li>
+                           <li><a href="https://www.linkedin.com/in/abdelwb/" target="_blank" class="nav-link cursor-item">LinkedIn</a></li>
+                           <li><a href="https://github.com/Monstervich" target="_blank" class="nav-link cursor-item">GitHub</a></li>
+                           <li><a href="https://twitter.com/Monstervich" target="_blank" class="nav-link cursor-item">Twitter</a></li>
+                           <li><a href="https://www.imdb.com/name/nm12126418/" target="_blank" class="nav-link cursor-item">IMDb</a></li>
+                        </ul>
+                        <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
 
-          <div class="w3-quarter">
-            <img src="https://imgur.com/lxhuCg9.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Substance Painter</p>
-          </div>
-        
-          <div class="w3-quarter">
-            <img src="https://imgur.com/eE868lb.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Source Filmmaker</p> 
-          </div>
-
-          <div class="w3-quarter">
-            <img src="https://imgur.com/KCPKFXS.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Adobe Illustrator</p>   
-          </div>
-
-          <div class="w3-quarter">
-            <img src="https://imgur.com/UtSW5RN.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Gimp 2</p>   
-          </div>
-
-          <div class="w3-quarter">
-            <img src="https://imgur.com/uA6Wq2G.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Visual Studio IDE</p>   
-          </div>
-
-          <div class="w3-quarter">
-            <img src="https://imgur.com/6waxxh6.png" width="100%" height="100%">
-            <p class="w3-large" align="center">Eclipse IDE</p>   
-          </div>
-
-          <div class="w3-quarter">
-            <img src="https://imgur.com/RD9xvPY.png" width="100%" height="100%">
-            <p class="w3-large" align="center">JIRA</p>   
-          </div>
-
-        </div>
-      </div>
-
-
-
-<!-- Added Background Image behind the Render and Videos -->
-      <p> <hr /> <br /> </p>
-      <div class="w3-center" >
-        <div class="container" id="BGcontainer">
-          <div class="parent">
-            <img class="image_glow" width="1200" height="520" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
-          <iframe class="iframe_glow1" width="640" height="360" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-      <p> <br /> <hr /> </p>
-        <div class="w3-center" >
-          <div class="container" id="BGcontainer">
-            <div class="parent">
-            <img class="image_glow2" width="1200" height="450" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
-            <iframe class="iframe_glow1" id="Crash" width="640" height="360" src="https://www.youtube.com/embed/s30lXqjLehM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <p> <br /> <hr /> </p>
-        <div class="w3-center" >
-          <div class="container" id="BGcontainer">
-            <div class="parent">
-            <img class="image_glow2" width="1200" height="450" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
-            <iframe class="iframe_glow1" id="Behind The Door" width="640" height="360" src="https://www.youtube.com/embed/0Ggx8f29hII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="cover-v1 jarallax">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-8">
+                        <h1 class="heading text-white">Abdullah Abdelwahab<br><br><span id="quote">Game Dev</span></h1>
+                        <p class="subheading  text-white">Quality Assurance<br>MS Graduate<br>DE&I Activist</p><br>Currently Employed at<a href="https://www.activisionblizzard.com/" target="_blank"> <img src="images/Activision_Blizzard_logo.png" alt="Activision Blizzard Logo" width="1952" height="1352" style="width: 267px; height: 60px;"></a><br>
+                        <a class="btn-draw btn--white cursor-item mt-3" href="https://github.com/MonsterSandvich/portfolio/raw/gh-pages/Documents/AbdullahAbdelwahabResume2022.pdf"><span class="btn-draw__text" style="color:#D4AF37;"><span>Download Resume</span></span></a><!--BLIZZARD color:#009AE4-->
+                     </div>
+                     <div class="distortion">
+                        <img src="images/abdullah.png" width="657" height="876" alt="">
+                     </div>
+                     <div class="distortion-desc">
+                        <p class="hero-desc"><i>“It’s not going to be easy, you know… Nothing worthwhile is.” - N. Druckmann and J. Scherr<!--Uncharted: The Lost Legacy Media Day, Dubai, UAE--></i></p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-      <p> <br /> <hr /> </p>
-        <div class="w3-center" >
-          <div class="container" id="BGcontainer">
-            <div class="parent">
-            <img class="image_glow2" width="1200" height="450" src="https://imgur.com/FbpfJNR.png" alt="RENDER BG">
-            <iframe class="iframe_glow1" id="DbDOW" width="640" height="360" src="https://www.youtube.com/embed/xA8IYgc6dwI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-2">
+                        <h3 class="section-title">About</h3>
+                     </div>
+                     <div class="col-lg-4">
+                        <p>Abdullah is a Cybersecurity Master's degree holder at St. Cloud State University and Honorary Computer Systems graduate of Heriot-Watt University whose goal is to take part in the creation and protection of memorable, interactive, entertaining and narrative-driven games that people of all backgrounds can enjoy.<br><br>
+                           He is a passionate and hardworking professional with a talent in optimizing, refactoring, visualizing concepts and writing and maintaining documentation. Abdullah has an extensive background in C#, C++, optimization, refactoring, engine/library development, utility development, network programming and game design.
+                        </p>
+                        <a class="btn-draw btn--white cursor-item mt-4" href="contact.html"><span class="btn-draw__text" style="color:#D4AF37;"><span>Let's Talk!</span></span></a>
+                     </div>
+                     <div class="col-lg-6">
+                        <p>Currently employed full-time at Activision Blizzard, Inc. with 6 shipped AAA titles and 8+ years of experience in the Gaming Industry.<br><br>
+                           He is also a Senior Moderator for Midwinter Entertainment and Improbable's "Scavengers" and Network Global Lead for ABK (Activision Blizzard King) SWANA Employee Network.<br><br>
+                        Abdullah participated and been part of Design and Art communities since 2014, including the following Workshops:<br><br>
+                        <img src="images/steam.png" width="175" height="55" alt="">&nbsp;&nbsp;<img src="images/owworkshop.png" width="150" height="55" alt="">&nbsp;&nbsp;&nbsp;<img src="images/igda.png" width="150" height="55" alt="">
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
 
+            <div class="section" id="services-section">
+               <div class="container">
+                  <div class="row mb-80 border-section">
+                     <div class="col-lg-6">
+                        <h3 class="section-title">Skills</h3>
+                     </div>
+                     <div class="col-lg-6">
+                        <p><!--Design iteration through research-driven testing<br>
+                           Asset pipelines and tools, player mechanics and technical documentation<br>
+                           C#, C++, LUA, R, SQL, JIRA, DevTrack and AWS Aurora--></p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="project-list">
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Leadership</h5>
+                                 <p>
+                                 — Over 8 years of leadership roles in the Gaming and Entertainment Industry.<br>
+                                 — Lead teams to win IGDA's eJam 2020, First Gulf Bank Hackathon 2016, VISA 's Digital Payments Hackathon 2016 and DWGE's Indie Game DevFest.</p>
+                              </div>
+                              <div class="project-categ">01</div>
+                           </div>
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Quality Assurance</h5>
+                                 <p>
+                                 — Helped coordinate large scale test scenarios with 900+ other testers to ship 5 AAA titles including “Call of Duty&reg;: Vanguard.”<br>
+                                 — Worked within agile software development structures using JIRA to track progress, write issues, and monitor changes.<br>
+                                 — Investigated test cases on PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Android, iOS and PC gaming platforms.</p>
+                              </div>
+                              <div class="project-categ">02</div>
+                           </div>
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Game Design</h5>
+                                 <p>
+                                 — Created a Crash Bandicoot mod for “Don't Starve Together” on Valve's Steam Workshop. The mod currently sits as the top favorited custom character mod with over 200,000 subscribers. It was nominated during the Indie Game Devfest as a Dubai Game Expo Finalist in 2015.<br>
+                                 — Implemented UI integration for “Behind The Door” with different movement setups for the Android release of the game.
+                                 </p>
+                              </div>
+                              <div class="project-categ">03</div>
+                           </div>
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Game Programming</h5>
+                                 <p>
+                                 —  Experienced with C#, C++, LUA, R, SQL, HTML5, CSS and JavaScript.<br>
+                                 —  Created a popular Overwatch&reg; Workshop gamemode based on the multiplayer horror game, “Dead by Daylight.” The gamemode was featured by various content creators. The code was made open source, thus has improved and unique versions of it. [Workshop Code: NB9ZW]
+                                 </p>
+                              </div>
+                              <div class="project-categ">04</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="services_active owl-carousel">
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/gif-0.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-1.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/gif-3.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-2.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/gif-1.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-3.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <!--<div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="https://i.imgur.com/c4fg4Oj.gif" alt="" class="img-fluid">
+                              </div>
+                           </div>-->
+                        </div>
+                     </div>
+                  </div>
+                     <!--<div class="col-lg-6">
+                        <div class="services_active owl-carousel">
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-1.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-2.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-3.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-4.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-5.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-6.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/autoslider-7.jpg" width="540" height="660" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>-->
+                  <div class="row mt-100">
+                     <div class="col-lg-2">
+                        <h3 class="project-title">Tools Used</h3>
+                     </div>
+                     <div class="owl-carousel logo-slider">
+                        <div class="logo-v1 cursor-item ">
+                          <img src="images/tools/jira.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/unity.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/ue.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/maya.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/blender.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/opengl.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/sp.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/vs.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/gh.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/ai.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/gimp.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/tools/eclipse.png" alt="Image" class="img-fluid">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
+            <div class="section">
+               <div class="container">
+                  <div class="row mb-80 border-section">
+                     <div class="col-lg-6">
+                        <h3 class="section-title">Work Portfolio</h3>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="filter-wrap">
+                           <ul class="filter-wrapper clearfix">
+                              <!-- Need to make selected dynamic -->
+                              <li><a href="#" data-filter="*" class="selected cursor-item">See All</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".projectlead">Project Lead</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".qa">QA</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".design">Design</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".programming">Programming</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row portfolio-items">
+                     <div class="col-lg-12 p-0">
+                        <div class="work-gallery">
+                           <div class="col-md-6 single-item qa design">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-01.html" class="portfolio-item"><img src="images/portfolio/vanguard.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Quality Assurance and Inclusive Game Design</p>
+                                    <h3><a href="project-01.html">Call of Duty&reg;: Vanguard</a></h3>
+                                    <a href="*project-01.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item qa">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-02.html" class="portfolio-item"><img src="images/portfolio/coldwarz.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Quality Assurance</p>
+                                    <h3><a href="project-02.html">Call of Duty&reg;: Black Ops Cold War</a></h3>
+                                    <a href="project-02.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item qa">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-03.html" class="portfolio-item"><img src="images/portfolio/warzone.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Quality Assurance</p>
+                                    <h3><a href="project-03.html">Call of Duty&reg;: Warzone</a></h3>
+                                    <a href="project-03.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item qa">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-04.html" class="portfolio-item"><img src="images/portfolio/modernwarfare.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Quality Assurance</p>
+                                    <h3><a href="project-04.html">Call of Duty&reg;: Modern Warfare</a></h3>
+                                    <a href="project-04.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item qa design">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-05.html" class="portfolio-item"><img src="images/portfolio/behindthedoor.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Game Design, Quality Assurance and English Localization</p>
+                                    <h3><a href="project-05.html">Behind The Door</a></h3>
+                                    <a href="project-05.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item design programming">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <!--
+                                 <a href="*single-portfolio.html" class="portfolio-item"><iframe class="iframe_glow1" width="540" height="963" src="https://www.artstation.com/embed/8385218" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe></a>
+                                 -->
+                                 <a href="project-06.html" class="portfolio-item"><img src="images/portfolio/untildawn.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Game Designer and Programmer</p>
+                                    <h3><a href="project-06.html">Until Dawn - OpenGL Render</a></h3>
+                                    <a href="project-06.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item design programming">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-07.html" class="portfolio-item"><img src="images/portfolio/owdbd.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Game Designer and Programmer</p>
+                                    <h3><a href="project-07.html">Overwatch&reg; - Workshop Gamemode</a></h3>
+                                    <a href="project-07.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 single-item projectlead">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="project-08.html" class="portfolio-item"><img src="images/portfolio/dstmod.jpg" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Project Lead</p>
+                                    <h3><a href="project-08.html">Don't Starve Together - Workshop</a></h3>
+                                    <a href="project-08.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                           <li><a href="https://github.com/MonsterSandvich/portfolio/raw/gh-pages/Documents/AbdullahAbdelwahabResume2022.pdf" class="cursor-item">Resume</a></li>
+                           <li><a href="https://www.linkedin.com/in/abdelwb/" target="_blank" class="cursor-item">LinkedIn</a></li>
+                           <li><a href="https://github.com/Monstervich" target="_blank" class="cursor-item">GitHub</a></li>
+                           <li><a href="https://twitter.com/Monstervich" target="_blank" class="cursor-item">Twitter</a></li>
+                           <li><a href="https://www.imdb.com/name/nm12126418/" target="_blank" class="cursor-item">IMDb</a></li>
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2022 <a href="#">Abdullah Abdelwahab | Monstervich.</a> All rights reserved.<br><br>
+                              <a href="https://www.activision.com/" target="_blank">&copy; 2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE, CALL OF DUTY MODERN WARFARE, MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE and CALL OF DUTY VANGUARD are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</a></small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
 
-      <p><br /><br /></p>
+            <!-- Circle Scroll -->
+            <div class="circular-text">
+               <span id="rotated"> <img src="images/cabezita.png" alt=""> Abdullah Abdelwahab • Scroll Down • Scroll Down • Scroll Down • Scroll Down •</span>
+            </div>
+         </div>
+         <!-- Main content inner end -->
       </div>
-      <p><br /><br /></p>
-    </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
 
 
-<!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min" id="info">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide"><b>About Me</b></span>
-      </div>
-    </div>
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
 
-<!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64">
-    <p>
-    <br />
-    <br />
-    </p>
-    <!-- Unnecessary: <h3 class="w3-center">About Me</h3> -->
-    <p>
-    <br />
-    <hr />
-    <hr />
-    <br />
-  I am a very passionate lover of game design, whether it is on a console or on a PC. In addition to my continuous academic development, I spend time on Game Development using development tools and make shorts with Valve's Source Filmmaker. <br />I have developed a highly rated Mod called Crash Bandicoot DST that is still currently number one custom character Mod on the Steam Workshop. <br /><br />
-
-  During my years, I sought extracurricular internships and participated in major events like: Middle East Film and Comic Con, Games15, Step Conference, XCAT World Series, Emirates Islamic Hackathon, Angelhack and Gulf Motor Festival. Where I developed many skills like working under pressure, working with a team, leadership skills, collaborations, handling difficult people, and marketing our efforts. <br /><br />
-
-  Besides my academics, I am very active in sports activities. I have coached the Fight Club in Dubai for an academic year. <br />I currently am a practitioner in the martial art of Capoeira. I plan to extend my knowledge and abilities from my Capoeira background in to the field of motion capture. On my way on attaining a <a href="http://abadacapoeiradubai.com/graduation" title="ABADA Capoeira Graduation System" target="_blank" style="color: #01F9E3" class="w3-hover-text-aqua"><i>Graduado</i></a> title with a Blue cord level in Capoeira. Experience in teaching adults, as well as kids, across multiple schools across Dubai</a></i>.<br /><br />
-
-  On the side, I stream regularly on live streaming website, <i><a href="https://www.twitch.tv/MonsterSandVich" title="withaV" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Twitch</a></i>. Where I keep up with the gaming trends, and occasionally pine for classic titles that turned me into the healthy, sleep-shirking addict I am today.<br /><br /> <!--Twitch Hexa: #6441A4-->
-
-  I aspire to become a renowned Game Developer who would start a whole new era of games with the help of Virtual Reality and Motion Capture. As well as handling my own marketing team using the skills I am familiar with.<br /><br />
-
-
-  Graduated with a Masters of Science in Information Assurance at <i><a href="https://www.stcloudstate.edu/" title="St. Cloud State University" target="_blank" style="color: #CD1041" class="w3-hover-text-blue">SCSU</a></i>; Currently working full-time at Activision Blizzard.</p>
-    <div class="w3-row">
-      <div class="w3-col m6 w3-center w3-padding-large">
-        <h4><p><b><i class="fa fa-book w3-margin-right w3-center"></i>Education and Achievements</b></p></h4><br>
-        <img src="https://imgur.com/Qq1SgXL.jpg" class="w3-round w3-image" alt="Grad Photo" width="500" height="333"> <!--Removed: w3-opacity w3-hover-opacity-off-->
-  <br /><br />
-        <img src="https://imgur.com/dEVVrez.jpg" class="w3-round w3-image" alt="VR Presentation" width="500" height="333">
-  <br /><br />
-        <img src="https://imgur.com/8xat417.jpg" class="w3-round w3-image" alt="Debate" width="500" height="333">
-  <br /><br />
-        <img src="https://imgur.com/yMNfutr.jpg" class="w3-round w3-image" alt="Class Reps" width="500" height="333">
-  <br /><br />
-        <img src="https://imgur.com/XU91R15.jpg" class="w3-round w3-image" alt="VISA Showcase Day" width="500" height="333">
-  <br /><br />
-        <img src="https://imgur.com/paBDnIA.jpg" class="w3-round w3-image" alt="VISA Hackathon Check" width="500" height="333">
-  <br /><br />
-        <img src="https://imgur.com/JJReRxC.jpg" class="w3-round w3-image" alt="FGB Hackathon Check" width="500" height="333">   
-  <br /><br />
-        <img src="https://imgur.com/2oWvwBS.jpg" class="w3-round w3-image" alt="DWGS - Indie Game DevFest Finalist" width="500" height="333">
-  <br /><br />
-        <!--<img src="https://imgur.com/muVcU5c.png" class="w3-round w3-image" alt="The Art of Don't Starve: Crash Bandicoot DST" width="500" height="333">
-  <br /><br />-->
-        <img src="https://imgur.com/y4hWdZw.png" class="w3-round w3-image" alt="Dead by Daylight Overwatch Gamemode Promo" width="500" height="333">
-      </div>
-
-    <!-- Hide this text on small devices -->
-      <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p><b>Bachelor's of Science in Computer Systems with 2:1 Honours from <a href="https://www.hw.ac.uk/study/uk/undergraduate/computer-systems.htm" title="Heriot-Watt Computer Systems Course Overview" target="_blank" style="color: #01F9E3" class="w3-hover-text-blue">Heriot-Watt University (Edinburgh, UK)</a>.</b><br /><br />
-      <b><i>Acquired a 2:1 (Upper Division) Honourary Degree over the course of 4 years. A summary of my most notable achievements over my academic career (2014-Present):</i></b>
-      <br /><br />
-      • <b>Dissertation Project:</b> Focused on the field of Interaction in Video Games (Tech Demo: Beyond Souls): Created a game from scratch using the Unity3D game engine to conduct a systematic analysis on a game’s user interface, included with its overall performance, as well as player’s behaviour in a stressful and eerie virtual environment, using volunteers who are familiar with common video-game controls. The project involves studying, as well as play-testing, different multiplayer games in order to gain a first-hand perspective to hypothesize a core relationship between player and an interaction. Production of a multiplayer game, where users can interact with one another, as well as, the objects that surround them was vital; especially in acquiring the analysis to the aforementioned relationship.</p>
-
-      • <b>Web Programming (Project 1) -</b> Created a music store website "Spectre Music" where customers can add items to cart and checkout. Using HTML5 (XHTML syntax), CCS3, responsive web design, PHP, XML, mySQL and JavaServer Pages (JSP).
-      <br /><br />
-      • <b>WP (Project 2) -</b> Created a Twitter Follower Manager website, using the Twitter API implementing AJAX and MySQL databases.
-      <br /><br />
-      • <b>Hardware-Software Interface (Project 1) -</b> Created a steganography software using C to be used with “.PPM” format files using a 2D array.
-      <br /><br />
-      • <b>HSI (Project 2) -</b> Recreated the game "Mastermind", using C and assembly language.
-      <br /><br />
-      • <b>Interaction Design -</b> Designed a full-scaled penguin robot caretaker "Pengubot". As a team we carried on an experimental protocol and demonstrated a video/visual strip of a scenario.
-      <br /><br />
-      • <b>Web Design and Databases -</b> Created a fully functional game store website "Planet Undead" to showcase our skills of web design including PHP and MySQL databases. Awarded the best website theme and design.
-      <br /><br />
-      • <b>Computer Network Security (Project 1) -</b> Symmetric Encrypting Algorithm: Completed taaks in learning core concepts of secret key encryption, by obtaining evidence-based experience when encrypting, as well as, decrypting messages.
-      <br /><br />
-      • <b>CNS (Project 2) -</b> Secure Applet: Created a java applet, which will then later by signed with a X.509 certificate, to verify a file signed by another external group.
-      <br /><br />
-      • <b>3D Graphics and Animation | Until Dawn Cabin -</b> Designed and implemented a rendering and animation system, in OpenGL, that demonstrated the various concepts of a graphics engine learned throughout this course. The scene consisted of a Scenegraph that was 3+ levels in depth, three geometry models, various transformations and rotations, various material and lighting shader iterations and an automated camera system with multiple user interactions upon the objects in the scene.
-      <br /><br />
-      • <b>Games Programming (Project 1) | Time Traveller Game -</b> Understanding, designing, developing, implementing and playtesting the game mechanic of traveling back in time. Developed a platformer game on the Unity3D game engine.
-      <br /><br />
-      • <b>GP (Project 2) -</b> Implementing four core components often used in Video Games. Demonstrated running code for a particle explosion, a physically-driven bouncing ball, Boids flocking simulation in 3D space and an A* path-planning search.
-      <br /><br />
-      • <b>First Gulf Bank Hackathon | Abu Dhabi | 2nd Runner Up -</b> Lead my team, Unity Insomniacs, by creating an Augmented Reality application using the Unity Engine (Beta). The AR app catered to the banking sector where the user could enter a 4-digit pin and access an interface that displayed multiple 3-Dimensional panels that were fully functional. As well as using Google Map's API to navigate the user to an existing FGB ATM machine as well, as notifying the user whenever he/she is in proximity of a nearby offer. To top it all off, we implemented a smart learning algorithm that produced supervised inductive learning method to adapt and recognize a credit/debit card.
-      <br /><br />
-      • <b>The Digital Payments Hackathon | Dubai | 2nd Place -</b> Team Unity Insomniacs won back-to-back once more during the Digital Payments Hackathon organized by AngelHack and sponsored by VISA, Decode Dubai, MobileConnect, in5 and Dubai Internet City.</n>
-      Our goal was to determine where digital payment solutions will have the most impact on the future of Dubai. We needed to leverage at least one “VISA Payment Method API” to create a digital payment application. </n>
-      We competed against 19 teams. After developing for 24-hours, we created a fully functional augmented reality application called “VISA AR” and emerged victorious, placing second.
-      <br /><br />
-      • <b>DST Crash Bandicoot Mod -</b> Made a Crash Bandicoot mod for Don't Starve Together (a game by Klei Entertainment) on Valve's Steam Workshop. It involved: Creating sketches, Managing a team, Lua Coding/HTML, and other similar skills. The mod currently sits as one of the top favorited character mods with over 200,000 downloads.</n>
-      The mod was nominated during the Indie Game Devfest as a Dubai Game Expo Finalist.
-      <br /><br />
-      • <b>The Effects of Cheats in Anti-Cheat Protected Servers/Games | Term Paper -</b> Wrote a starred paper identifying the key scenarios into what a user recognizes and experiences in terms of being exposed to cheats, to possibly aid in the creations of a more secure Anti-Cheat software for developing existing/future studios.
-      <br /><br />
-      • <b>Dead by Daylight Overwatch Gamemode -</b>  Created a popular Overwatch workshop gamemode based on the immersive multiplayer horror game, Dead by Daylight.</n>
-      The code is open source through the Overwatch workshop. The mod was made shortly after the initial release of the Overwatch workshop.</n>
-      The workshop gamemode was featured by many popular content creators, thus it has improved and unique versions of it.</n>
-      [Workshop Code: NB9ZW]
-      <br /><br />
-      </div>
-      <hr />
-      <br />
-      <hr />
-      <div class="w3-row-padding" style="margin:100px -16px" id="pre-social">  
-      </div>
-      <br />
-      <hr />
-      <center> <a href="https://github.com/MonsterSandvich/portfolio/raw/gh-pages/Documents/AbdullahAbdelwahabResumeSpring2020.pdf" target="_blank" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-centre"></i>Downloadable Resume</a> </center>
-
-      <br />
-      <hr />
-      <h3 class="w3-center">Social Media</h3>
-      <div class="w3-row-padding" style="margin:0 -16px" id="social">
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-display-container"> <a href="https://twitter.com/Monstervich" target="_blank">
-            <img src="https://imgur.com/9LrfSnp.png" alt="Twitter" style="width:100%"></a>
-            <!-- <span class="w3-display-bottomleft w3-padding"></span> -->
-          </div>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-display-container"> <a href="https://github.com/Monstervich" target="_blank">
-            <img src="https://imgur.com/VXAto41.png" alt="Github" style="width:100%"></a>
-            <!-- <span class="w3-display-bottomleft w3-padding"></span> -->
-          </div>
-        </div>
-          <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-display-container"> <a href="https://linkedin.com/in/abdullahabdelwahab/" target="_blank">
-            <img src="https://imgur.com/g2G4JfV.png" alt="LinkedIn" style="width:100%"></a>
-            <!-- <span class="w3-display-bottomleft w3-padding"></span> -->
-          </div>
-        </div>
-          <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-display-container"> <a href="https://steamcommunity.com/id/changeyerfate/" target="_blank">
-            <img src="https://imgur.com/2P1NBYi.png" alt="Steam" style="width:100%"></a>
-            <!-- <span class="w3-display-bottomleft w3-padding"></span> -->
-          </div>
-        </div>
-        <p><div class="w3-center"> <!-- style="margin-bottom: -100px" -->
-        Accounts verified by <a href="https://keybase.io/monstervich" title="Keybase.io/monstervich" target="_blank" class="w3-hover-text-aqua">Keybase.io</a> <img src="https://imgur.com/uHmCE3C.png" alt="Keybase" style="width:2%">
-        </div></p>
-      </div>
-  </div>
-</div>
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-
-<!-- Footer -->
-<footer class="w3-center  w3-opacity w3-hover-opacity-off">
-<div class="container" id="footercontainer">
-  <img src="https://imgur.com/JohXUHe.jpg" width="100%" height="100%">
-
-  <div class="centeredtop">
-      <div class="w3-large w3-section">
-      <p><h5>Contact me by: <i><br>Cell Phone: <a href="tel:+16517037483">+16517037483</a><br>
-      Email: <a href="mailto:abdullah.valve@gmail.com" class="w3-hover-text-aqua">abdullah.valve@gmail.com</a></h5></i></p>
-      </div><br /><br /><br />
-      <p>Thanks to <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-aqua">w3.css</a> #withaV</p>
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-centre"></i>To the top</a>
-  </div>
-</div>
-</footer>
-
-<!-- Add Google Maps -->
-<script>
-
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-
-
-
-
-</body>
+   </body>
 </html>
